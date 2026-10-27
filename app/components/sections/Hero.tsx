@@ -53,7 +53,7 @@ export default function Hero() {
           <ButtonWithIcon
             variant="outline"
             icon={<FontAwesomeIcon icon={faDownload} aria-hidden="true" />}
-            href="/resume.pdf"
+            href={heroContent.secondaryAction.href}
             target="_blank"
             className="justify-center"
           >

@@ -7,11 +7,10 @@ export const experiences: Experience[] = [
     location: "Taguig, Philippines",
     period: "2025–2026",
     description: [
-      "Developed responsive frontend features from UI/UX designs and technical requirements.",
-      "Integrated REST APIs to support dynamic data and application workflows.",
-      "Wrote tests and refactored reusable components to improve code quality and maintainability.",
-      "Collaborated with designers, QA engineers, and backend developers to troubleshoot issues and deliver polished interfaces.",
-      "Focused on responsive layouts, component reusability, and consistent user experiences.",
+      "Developed and launched frontend features from Figma and Zeplin designs using React and TypeScript.",
+      "Integrated REST APIs, built reusable UI components, and developed unit tests using Jest and React Testing Library.",
+      "Refactored existing code to improve performance, maintainability, and code quality.",
+      "Participated in code reviews, quality validation (CQM/SAM), and collaborated with designers, QA engineers, backend developers, and distributed teams to deliver features in an Agile environment.",
     ]
       .map((item) => `• ${item}`)
       .join("\n"),
@@ -23,11 +22,10 @@ export const experiences: Experience[] = [
     location: "Taguig, Philippines",
     period: "2023–2025",
     description: [
-      "Converted design mockups and product requirements into responsive web applications.",
-      "Developed reusable React components and shared UI patterns for consistent interfaces.",
-      "Integrated REST APIs to connect frontend components with backend services.",
-      "Collaborated with product, design, and engineering teams to refine features and resolve UI issues.",
-      "Improved usability and layout consistency across devices and screen sizes.",
+      "Converted Figma designs into responsive, cross-browser web applications.",
+      "Developed reusable React components to improve consistency and code maintainability.",
+      "Integrated REST APIs and implemented frontend business logic.",
+      "Worked closely with product, design, and backend teams in Agile development.",
     ]
       .map((item) => `• ${item}`)
       .join("\n"),
@@ -37,11 +35,10 @@ export const experiences: Experience[] = [
     company: "Freelance",
     period: "2022–2024",
     description: [
-      "Designed, developed, and maintained websites based on client requirements.",
-      "Built reusable UI components and integrated third-party APIs.",
-      "Improved mobile responsiveness, accessibility, frontend performance, and SEO.",
-      "Worked directly with clients to gather requirements, communicate progress, and incorporate feedback.",
-      "Handled frontend implementation, testing, revisions, and ongoing website maintenance.",
+      "Built responsive websites and web applications for multiple clients.",
+      "Integrated third-party and REST APIs.",
+      "Optimized websites for performance, accessibility, and SEO.",
+      "Maintained and enhanced existing client applications.",
     ]
       .map((item) => `• ${item}`)
       .join("\n"),

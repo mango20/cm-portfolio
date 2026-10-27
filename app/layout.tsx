@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import React from "react";
 import Providers from "./components/providers/ThemeProviders";
 import "./globals.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My application",
+  title: "Charmaine's Portfolio",
+  description: "My personal portfolio.",
 };
 
 export default function RootLayout({
