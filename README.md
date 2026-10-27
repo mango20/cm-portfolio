@@ -193,7 +193,7 @@ This portfolio can be deployed using [Vercel](<https://vercel.com/>), which supp
 
 ## Contact
 
-- **Portfolio:** 
-- **GitHub:** mango20
+- **Portfolio:** https://clmanga.vercel.app/
+- **GitHub:** [mango20](https://github.com/mango20/)
 - **LinkedIn:** https://www.linkedin.com/in/charmaine-manga-66ab29226/
-- **Email:** mangacharmainelilan@example.com
+- **Email:** mangacharmainelilan@gmail.com
