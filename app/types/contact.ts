@@ -1,0 +1,10 @@
+export interface SocialLink {
+  label: string;
+  href: string;
+  icon: "github" | "linkedin" | "email";
+}
+
+export interface ContactData {
+  email: string;
+  socials: SocialLink[];
+}

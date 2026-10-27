@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Charmaine's Portfolio
 
-## Getting Started
+A personal portfolio website built with Next.js, React, and TypeScript to showcase projects, technical skills, and development work.
 
-First, run the development server:
+Table of Contents
+Features
+Tech Stack
+Getting Started
+Available Scripts
+Testing
+Production Build
+Project Structure
+Deployment
+Contact
+Features
+Responsive design for desktop, tablet, and mobile devices
+Dark and light theme toggle
+Projects showcase
+Reusable UI components
+Tailwind CSS styling
+TypeScript for type safety
+Unit and component testing
+Test coverage reporting
+Tech Stack
+Framework: Next.js
+Frontend Library: React
+Programming Language: TypeScript
+Styling: Tailwind CSS
+Linting: ESLint
+Testing: Vitest and React Testing Library
+Version Control: Git and GitHub
+Getting Started
+Prerequisites
 
-```bash
+Make sure you have installed:
+
+Node.js
+npm
+Git
+Installation
+Clone the repository:
+bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+
+Navigate to the project directory:
+bash
+cd YOUR_REPOSITORY
+
+Install dependencies:
+bash
+npm install
+
+Start the development server:
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
+Available Scripts
+Command Description
+npm run dev Starts the development server
+npm run build Builds the application for production
+npm run start Starts the production server
+npm run lint Runs ESLint
+npm test Runs all tests once
+npm run test:watch Runs tests in watch mode
+npm run test:coverage Runs tests and generates a coverage report
+Testing
+Run Tests
+bash
+npm test
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Watch Mode
+bash
+npm run test:watch
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Test Coverage
+bash
+npm run test:coverage
 
-## Learn More
+The coverage report helps identify which parts of the application are covered by tests.
 
-To learn more about Next.js, take a look at the following resources:
+Production Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build the application:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+bash
+npm run build
 
-## Deploy on Vercel
+Start the production server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+bash
+npm run start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run ESLint to check code quality:
+
+bash
+npm run lint
+
+Project Structure
+text
+clmanga-portfolio/
+├── app/
+│ ├── components/
+│ │ └── ui/
+│ ├── data/
+│ │ └── **tests**/
+│ └── ...
+├── public/
+├── package.json
+├── README.md
+├── tsconfig.json
+└── ...
+
+Note: Update this example to match your actual project structure.
+Deployment
+
+This portfolio can be deployed using Vercel, which supports Next.js applications.
+
+Push your project to GitHub.
+Import the repository into Vercel.
+Configure the project settings and required environment variables.
+Deploy your application.
+Add your live portfolio URL to your GitHub repository description.
+Contact
+Portfolio: Add your deployed portfolio URL
+GitHub: YOUR_USERNAME
+LinkedIn: Add your LinkedIn profile URL
+Email: YOUR_EMAIL@example.com
+License
+
+Add a LICENSE file if you intend to distribute this project under a specific open-source license.
