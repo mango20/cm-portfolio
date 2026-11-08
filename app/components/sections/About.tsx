@@ -13,11 +13,7 @@ export default function About() {
   return (
     <section id="about" className="space-y-8">
       <div className="max-w-3xl space-y-4">
-        <p className="text-eyebrow">About Me</p>
-
-        <h2 className="text-section-title text-foreground">
-          A little about what I do.
-        </h2>
+        <h2 className="text-section-title text-foreground">About Me</h2>
 
         <div className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg flex flex-col gap-3">
           <p>

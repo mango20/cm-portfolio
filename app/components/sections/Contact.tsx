@@ -22,11 +22,7 @@ export default function Contact() {
   return (
     <section id="contact" className="space-y-8">
       <div className="max-w-2xl space-y-4">
-        <p className="text-eyebrow">Get in touch</p>
-
-        <h2 className="text-section-title text-foreground">
-          Let's build something meaningful.
-        </h2>
+        <h2 className="text-section-title text-foreground">Get in touch</h2>
 
         <p className="max-w-xl text-base leading-relaxed text-muted sm:text-lg">
           I'm open to new opportunities, collaborations, and exciting challenges

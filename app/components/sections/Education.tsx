@@ -16,9 +16,7 @@ export default function Education() {
   return (
     <section id="education" className="space-y-8">
       <div className="max-w-3xl space-y-4">
-        <p className="text-eyebrow">Education</p>
-
-        <h2 className="text-section-title text-foreground">Beyond the code.</h2>
+        <h2 className="text-section-title text-foreground">Education</h2>
 
         <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
           The academic foundation behind my approach to software development and

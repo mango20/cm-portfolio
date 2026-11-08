@@ -9,13 +9,11 @@ export default function Projects() {
       aria-labelledby="projects-heading"
     >
       <div className="max-w-3xl space-y-4">
-        <p className="text-eyebrow">Selected Work</p>
-
         <h2
           id="projects-heading"
           className="text-section-title text-foreground"
         >
-          Projects I've worked on.
+          Projects I've built.
         </h2>
 
         <p className="text-base text-muted sm:text-lg">

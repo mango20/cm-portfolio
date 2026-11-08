@@ -5,11 +5,7 @@ export default function Experience() {
   return (
     <section id="experience" className="space-y-8">
       <div className="max-w-3xl space-y-4">
-        <p className="text-eyebrow">Career Journey</p>
-
-        <h2 className="text-section-title text-foreground">
-          Where I've contributed.
-        </h2>
+        <h2 className="text-section-title text-foreground">Career Journey</h2>
 
         <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
           My professional journey building web applications, collaborating with

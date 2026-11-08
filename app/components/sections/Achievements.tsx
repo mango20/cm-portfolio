@@ -21,10 +21,8 @@ export default function Achievements() {
   return (
     <section id="achievements" className="space-y-8">
       <div className="max-w-3xl space-y-4">
-        <p className="text-eyebrow">Recognition & Milestones</p>
-
         <h2 className="text-section-title text-foreground">
-          Milestones worth celebrating.
+          Recognition & Milestones
         </h2>
 
         <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg">

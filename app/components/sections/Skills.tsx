@@ -11,10 +11,8 @@ export default function Skills() {
   return (
     <section id="skills" className="space-y-8" aria-labelledby="skills-heading">
       <div className="max-w-3xl space-y-4">
-        <p className="text-eyebrow">Technical Skills</p>
-
         <h2 id="skills-heading" className="text-section-title text-foreground">
-          Tools of my trade.
+          Technical Skills
         </h2>
 
         <p className="text-base text-muted sm:text-lg">
