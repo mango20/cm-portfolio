@@ -40,9 +40,11 @@ export default function ButtonWithIcon(props: ButtonWithIconProps) {
     iconPosition = "left",
     variant = "primary",
     className = "",
+    ...rest
   } = props;
 
   const showLeft = iconPosition === "left" || iconPosition === "both";
+
   const showRight =
     iconPosition === "right" || iconPosition === "both" || !!rightIcon;
 
@@ -66,13 +68,13 @@ export default function ButtonWithIcon(props: ButtonWithIconProps) {
     </>
   );
 
-  if ("href" in props && props.href) {
-    const { href, ...linkProps } = props;
+  if (props.href !== undefined) {
+    const linkProps = rest as Omit<LinkProps, keyof SharedProps | "href">;
 
     return (
       <a
         {...linkProps}
-        href={href}
+        href={props.href}
         className={classes}
         rel={props.target === "_blank" ? "noopener noreferrer" : props.rel}
       >
@@ -81,7 +83,7 @@ export default function ButtonWithIcon(props: ButtonWithIconProps) {
     );
   }
 
-  const { href: _href, ...buttonProps } = props as ButtonProps;
+  const buttonProps = rest as Omit<ButtonProps, keyof SharedProps>;
 
   return (
     <button
