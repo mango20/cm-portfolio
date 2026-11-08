@@ -4,15 +4,26 @@ import type {
   AnchorHTMLAttributes,
 } from "react";
 
-type ButtonWithIconProps = {
+type SharedProps = {
   children: ReactNode;
   icon?: ReactNode;
   rightIcon?: ReactNode;
   iconPosition?: "left" | "right" | "both" | "none";
   variant?: "primary" | "outline" | "ghost";
-  href?: string;
-  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
-} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children">;
+  className?: string;
+};
+
+type ButtonProps = SharedProps &
+  Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children"> & {
+    href?: undefined;
+  };
+
+type LinkProps = SharedProps &
+  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "children"> & {
+    href: string;
+  };
+
+type ButtonWithIconProps = ButtonProps | LinkProps;
 
 const variants = {
   primary: "bg-accent text-accent-foreground! hover:bg-accent-hover",
@@ -21,18 +32,16 @@ const variants = {
   ghost: "bg-transparent text-foreground hover:bg-surface",
 };
 
-export default function ButtonWithIcon({
-  children,
-  icon,
-  rightIcon,
-  iconPosition = "left",
-  variant = "primary",
-  href,
-  target,
-  className = "",
-  type = "button",
-  ...props
-}: ButtonWithIconProps) {
+export default function ButtonWithIcon(props: ButtonWithIconProps) {
+  const {
+    children,
+    icon,
+    rightIcon,
+    iconPosition = "left",
+    variant = "primary",
+    className = "",
+  } = props;
+
   const showLeft = iconPosition === "left" || iconPosition === "both";
   const showRight =
     iconPosition === "right" || iconPosition === "both" || !!rightIcon;
@@ -57,21 +66,29 @@ export default function ButtonWithIcon({
     </>
   );
 
-  if (href) {
+  if ("href" in props && props.href) {
+    const { href, ...linkProps } = props;
+
     return (
       <a
+        {...linkProps}
         href={href}
-        target={target}
-        rel={target === "_blank" ? "noopener noreferrer" : undefined}
         className={classes}
+        rel={props.target === "_blank" ? "noopener noreferrer" : props.rel}
       >
         {content}
       </a>
     );
   }
 
+  const { href: _href, ...buttonProps } = props as ButtonProps;
+
   return (
-    <button type={type} className={classes} {...props}>
+    <button
+      {...buttonProps}
+      type={buttonProps.type ?? "button"}
+      className={classes}
+    >
       {content}
     </button>
   );
