@@ -10,6 +10,7 @@ import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
 import Skills from "./components/sections/Skills";
 import Stats from "./components/sections/Stats";
+import BackToTop from "./components/ui/BackToTop";
 
 const sections = [
   { id: "stats", Component: Stats },
