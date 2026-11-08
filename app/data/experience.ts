@@ -31,6 +31,7 @@ export const experiences: Experience[] = [
     ]
       .map((item) => `• ${item}`)
       .join("\n"),
+    image: "/images/experience/acquiroph-logo.jpg",
   },
   {
     title: "Full Stack Developer",
@@ -61,6 +62,7 @@ export const experiences: Experience[] = [
     ]
       .map((item) => `• ${item}`)
       .join("\n"),
+    image: "/images/experience/wilshire-logo.jpg",
   },
   {
     title: "Software and Application Administrator",
@@ -76,5 +78,6 @@ export const experiences: Experience[] = [
     ]
       .map((item) => `• ${item}`)
       .join("\n"),
+    image: "/images/experience/questronixcorp-logo.jpg",
   },
 ];
