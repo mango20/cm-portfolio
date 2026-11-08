@@ -55,6 +55,7 @@ export default function Hero() {
             icon={<FontAwesomeIcon icon={faDownload} aria-hidden="true" />}
             href={heroContent.secondaryAction.href}
             target="_blank"
+            download={heroContent.secondaryAction.download}
             className="justify-center"
           >
             Download CV

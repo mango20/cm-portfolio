@@ -9,21 +9,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import InitialsIcon from "../ui/InitialsIcon";
 import ThemeToggle from "../ui/ThemeToggle";
-import Button from "../ui/button/Button";
+
 import { navLinks } from "@/app/data/navigation";
+import Button from "../ui/button/Button";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
-
-  const scrollToContact = () => {
-    closeMenu();
-    document.getElementById("contact")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
 
   return (
     <nav
@@ -65,7 +58,7 @@ export default function Navbar() {
         <ThemeToggle />
 
         <div className="hidden sm:block">
-          <Button variant="primary" onClick={scrollToContact}>
+          <Button variant="primary" href="#contact">
             Let's Talk
           </Button>
         </div>
@@ -104,14 +97,14 @@ export default function Navbar() {
           </ul>
 
           <div className="mt-3 border-t border-border pt-3">
-            <button
-              type="button"
-              onClick={scrollToContact}
+            <a
+              href="#contact"
+              onClick={closeMenu}
               className="flex w-full items-center justify-between rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-accent-foreground transition-colors hover:opacity-90"
             >
               Let's Talk
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </button>
+            </a>
           </div>
         </div>
       )}

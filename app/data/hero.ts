@@ -13,5 +13,6 @@ export const heroContent = {
   secondaryAction: {
     label: "Download CV",
     href: "/pdf/clmanga-cv.pdf",
+    download: "clmanga-cv.pdf",
   },
 } as const;
